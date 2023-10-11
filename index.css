@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    height: 5vw;
+    /* background-color: red; */
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav>h2 {
+    font-size: 3vw;
+    font-weight: 200;
+    z-index: 99;
+}
+
+.nav .nav2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav2 a {
+    margin-right: 7vw;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+.nav2 button {
+    padding: 0.7vw 3vw;
+    border-radius: 3vw;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav2 button h5 {
+    font-size: 1.3vw;
+    font-weight: 300;
+    position: relative;
+    z-index: 99;
+}
+
+button .green {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    transition: left 0.4s ease;
+
+}
+
+.nav2 button:hover .green {
+    left: 0;
+}
+
+.page {
+    height: calc(100% - 5vw);
+    /* background-color: red; */
+    text-align: center;
+    position: relative;
+    margin-bottom: 4vw;
+}
+
+.page>h2 {
+    position: relative;
+    font-size: 6vw;
+    font-weight: 100;
+    top: 25%;
+    text-transform: capitalize;
+    margin-bottom: 1vw;
+    z-index: 99;
+}
+
+.page h2 span {
+    border-bottom: 3px solid rgba(51, 247, 51, 0.733);
+}
+
+.page>h3 {
+    position: relative;
+    font-size: 2vw;
+    font-weight: 200;
+    top: 25%;
+
+}
+
+.page #img1 {
+    height: 200px;
+    position: absolute;
+    width: 150px;
+    left: 5%;
+    top: 6%;
+    border-radius: 10px;
+}
+
+.page #img2 {
+    height: 110px;
+    position: absolute;
+    width: 140px;
+    top: 9%;
+    right: 26%;
+
+}
+
+.page #img3 {
+    height: 120px;
+    position: absolute;
+    width: 120px;
+    right: 13%;
+    bottom: 10%;
+
+
+
+}
+
+.page2 {
+    height: 70vh;
+    background-color: #11111c;
+    color: #fff;
+    padding: 9vw 20vw;
+    text-align: center;
+}
+
+.page2>h4 {
+    font-size: 2vw;
+    font-weight: 100;
+    margin-bottom: 2vw;
+}
+
+.page2>h2 {
+    font-size: 3vw;
+    font-weight: 300;
+    margin-bottom: 2vw;
+}
+
+.page2>h5 {
+    font-size: 1.9vw;
+    font-weight: 300;
+}
+
+.page3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    padding: 0vw 0vw;
+    position: relative;
+}
+
+.left #ig1 {
+    height: 50%;
+    width: 25%;
+    top: 0%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.left #ig2 {
+    height: 30%;
+    width: 25%;
+    left: 0%;
+    top: 52%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+
+}
+
+.left #ig3 {
+    height: 40%;
+    width: 50%;
+    left: 31%;
+    top: 45%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+#ig4 {
+    height: 40%;
+    left: 31%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    padding: 2vw;
+}
+
+.right h2 {
+    font-size: 4vw;
+    font-weight: bolder;
+    margin-bottom: 2vw;
+}
+
+.right h5 {
+    font-size: 3vw;
+    font-weight: 200;
+    margin-bottom: 3vw;
+}
+
+.right h4 {
+    font-size: 3vw;
+    font-weight: 200;
+    margin-bottom: 5vw;
+}
+
+.page4 {
+    height: 100%;
+    width: 100%;
+    padding: 3vw 4vw;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.page4 h3 {
+    font-size: 5.9vw;
+    font-weight: 400;
+    margin-bottom: 4vw;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+.box img {
+    height: 20%;
+    width: 20%;
+    font-weight: 400;
+    margin-right: 3vw;
+
+
+}
+.page5{
+    height: 100%;
+    width: 100%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 4vw;
+}
+.swiper-slide h3 {
+    font-size: 4vw;
+    font-weight: 100;
+    margin-bottom: 2vw;
+}
+.swiper-slide h2 {
+    font-size: 3vw;
+    font-weight: 100;
+    margin-bottom: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .main {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .nav {
+        height: 5vw;
+        padding: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav>h2 {
+        font-size: 5.4vw;
+        font-weight: 200;
+    }
+
+    .nav .nav2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav2 a {
+        display: none;
+    }
+
+    .nav2 button {
+        padding: 1vw 4vw;
+        border-radius: 3vw;
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav2 button h5 {
+        font-size: 3.5vw;
+        font-weight: 300;
+        position: relative;
+        z-index: 99;
+    }
+
+    button .green {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: springgreen;
+        transition: left 0.4s ease;
+
+    }
+
+    .nav2 button:hover .green {
+        left: 0;
+    }
+
+    .page {
+        height: calc(97.2vh - 5vw);
+        /* background-color: red; */
+        text-align: center;
+        position: relative;
+        padding: 2vw;
+    }
+
+    .page>h2 {
+        position: relative;
+        font-size: 10vw;
+        font-weight: 100;
+        top: 25%;
+        text-transform: capitalize;
+        margin-bottom: 1vw;
+    }
+
+    .page h2 span {
+        border-bottom: 2px solid rgba(51, 247, 51, 0.733);
+    }
+
+    .page>h3 {
+        position: relative;
+        font-size: 4vw;
+        font-weight: 200;
+        top: 25%;
+
+    }
+
+    .page #img1 {
+        height: 180px;
+        position: absolute;
+        width: 90px;
+        left: 7%;
+        top: 5%;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .page #img2 {
+        height: 110px;
+        position: absolute;
+        width: 160px;
+        top: 16%;
+        right: 9%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+
+    }
+
+    .page #img3 {
+        height: 250px;
+        position: absolute;
+        width: 280px;
+        right: 12%;
+        bottom: 10%;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+
+
+    }
+
+    .page2 {
+        height: 40vh;
+        background-color: #11111c;
+        color: #fff;
+        padding: 9vw 5vw;
+        text-align: center;
+    }
+
+    .page2>h4 {
+        font-size: 5vw;
+        font-weight: bolder;
+        margin-bottom: 8vw;
+    }
+
+    .page2>h2 {
+        font-size: 4vw;
+        font-weight: 300;
+        margin-bottom: 5vw;
+    }
+
+    .page2>h5 {
+        font-size: 3vw;
+        font-weight: 100;
+    }
+
+    .page3 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .left {
+        height: 100%;
+        width: 50%;
+        padding: 0vw 0vw;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .left #ig1 {
+        height: 50%;
+        width: 25%;
+        top: 0%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+    }
+
+    .left #ig2 {
+        height: 30%;
+        width: 30%;
+        left: 0%;
+        top: 52%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+
+    }
+
+    .left #ig3 {
+        height: 50%;
+        width: 70%;
+        left: 31%;
+        top: 30%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+    }
+
+    #ig4 {
+        height: 28%;
+        left: 31%;
+        object-fit: contain;
+        object-position: center;
+        position: absolute;
+    }
+
+    .right {
+        height: 100%;
+        width: 50%;
+        padding: 5vw;
+    }
+
+    .right h2 {
+        font-size: 4vw;
+        font-weight: bolder;
+        margin-bottom: 3vw;
+    }
+
+    .right h5 {
+        font-size: 3vw;
+        font-weight: 200;
+        margin-bottom: 5vw;
+    }
+
+    .right h4 {
+        font-size: 3vw;
+        font-weight: 200;
+        margin-bottom: 5vw;
+    }
+
+    .page4 {
+        height: 70%;
+        width: 100%;
+        padding: 3vw 4vw;
+        /* background-color: red; */
+        text-align: center;
+    }
+
+    .page4 h3 {
+        font-size: 6vw;
+        font-weight: 500;
+        margin-bottom: 4vw;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center
+    }
+
+    .box img {
+        height: 40%;
+        width: 20%;
+        margin-right: 3vw;
+
+
+    }
+    .page5{
+        height: 50%;
+        width: 100%;
+        /* background-color: red; */
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 4vw;
+    }
+    .swiper-slide h3 {
+        font-size: 4vw;
+        font-weight: 100;
+        margin-bottom: 2vw;
+    }
+    .swiper-slide h2 {
+        font-size: 3vw;
+        font-weight: 100;
+        margin-bottom: 2vw;
+    }
+    
+
+
+
+}
